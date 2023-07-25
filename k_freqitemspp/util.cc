@@ -22,7 +22,7 @@ void create_dir(                    // create dir if the path does not exist
         
         char ch = path[i+1]; path[i+1] = '\0';
         if (access(path, F_OK) != 0) { // create the directory if not exist
-            if (mkdir(path, 0755) != 0) {
+            if (mkdir(path) != 0) {
                 printf("Could not create %s\n", path); exit(1);
             }
         }
