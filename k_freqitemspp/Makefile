@@ -12,7 +12,7 @@ FLAGS   = -lm -ldl -lnsl -lutil
 #  Compiler with OpenMP
 # ------------------------------------------------------------------------------
 all:$(ALLOBJS)
-	$(COMP) $(OPENMP) $(OPT) -o kpp $(FLAGS) $(ALLOBJS)
+	$(COMP) $(OPENMP) $(OPT) -o kpp $(ALLOBJS)
 
 %.o: %.cc
 	$(COMP) $(OPENMP) -c $(OPT) -o $@ $<

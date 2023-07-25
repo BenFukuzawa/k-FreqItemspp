@@ -9,8 +9,8 @@ dname=News20                        # data set name
 n=19928                             # cardinality
 format=int32                        # data format: uint16, int32
 dset=../data/1/${dname}.bin         # address of data set
-ofolder=results/${dname}/           # output folder
-
+# ofolder=results/${dname}/           # output folder
+ofolder=oatmeal
 # k=100
 # for alpha in 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9
 # do 
